@@ -1,0 +1,65 @@
+select* from sysdiagrams;
+
+
+select* from AdventureWorksDWBuildVersion;
+select * from DatabaseLog;
+select * from DimAccount;
+select * from DimCurrency;
+select * from DimCustomer;
+select * from DimDate;
+select * from DimDepartmentGroup;
+select * from DimEmployee;
+select * from DimGeography;
+select * from DimOrganization;
+select * from DimProduct;
+select * from DimProductCategory;
+select * from DimProductSubcategory;
+select * from DimPromotion;
+select * from DimReseller;
+select * from DimSalesReason;
+select * from DimSalesTerritory;
+select * from DimScenario;
+select * from FactAdditionalInternationalProductDescription;
+select * from FactCallCenter;
+select * from FactCurrencyRate;
+select * from FactFinance;
+select * from FactInternetSales;
+select * from FactInternetSalesReason;
+select * from FactProductInventory;
+select * from FactResellerSales;
+select * from FactSalesQuota;
+select * from FactSurveyResponse;
+select * from NewFactCurrencyRate;
+select * from ProspectiveBuyer;
+
+
+
+The path to set data set in SQL after the activation of "SQL Server Agent"
+
+C:\Program Files\Microsoft SQL Server\MSSQL16.MSSQLSERVER\MSSQL\Backup
+
+
+                               --imp queries
+1)
+select name from sys.tables;
+2)       
+SELECT 
+    TABLE_SCHEMA,
+    TABLE_NAME,
+    COLUMN_NAME,
+    DATA_TYPE
+FROM 
+    INFORMATION_SCHEMA.COLUMNS
+	where  COLUMN_NAME like'%sale%'
+ORDER BY 
+    TABLE_SCHEMA,
+    TABLE_NAME,
+    ORDINAL_POSITION;
+
+
+
+Look to it:
+
+[9:59 am, 24/7/2024] Thangam Siva✌🏾: String Functions (Transact-SQL) https://search.app/MhZqFH33WrPpBgZ88
+
+[4:15 pm, 24/7/2024] Thangam Siva✌🏾: Source: Devart Software https://search.app/p8M6ZGDJodwxRKaaA
